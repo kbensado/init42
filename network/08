@@ -1,0 +1,1 @@
+whois 52.85.221.110 | grep "OrgName"

@@ -1,0 +1,3 @@
+lrwxr-xr-x  1 root  wheel  22 Nov 20  2016 /etc/resolv.conf -> ../var/run/resolv.conf
+
+-rw-r--r--  1 root  daemon  275 Jun 21 11:09 /var/run/resolv.conf

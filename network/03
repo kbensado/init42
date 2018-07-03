@@ -1,0 +1,1 @@
+> networksetup -listallhardwareports | grep -A2 "Hardware Port.*Wi-Fi" | grep "Address"

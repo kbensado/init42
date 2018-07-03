@@ -1,0 +1,11 @@
+#bin/bash
+md5 /etc/crontab > /var/log/checksum_cron
+if [ -f /var/log/checksum_cron_old ]
+then
+	if [ $(diff /var/log/checksum_old /var/log/checksum_cron) != "" ]
+	then 
+		echo "ALARM CRONTAB MODIFIED" | mail -s "ALARM CRONTAB" $[USER]
+	fi
+then
+mv /var/log/checksum_cron /var/log/checksum_old
+

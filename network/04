@@ -1,0 +1,1 @@
+netstat -nt | grep "default" | head -n1

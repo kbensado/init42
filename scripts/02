@@ -1,0 +1,3 @@
+#!/bin/bash
+echo -e "#/bin/sh\nsudo apt-get dist-upgrade /var/log/update.log" > /var/log/apt_update.sh && chmod +x /var/log/apt_update.sh
+echo "0 4 * * 0 /var/log/apt_update.sh" /var/spool/cron/crontabs/apt_update
